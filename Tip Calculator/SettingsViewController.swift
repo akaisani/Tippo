@@ -39,12 +39,14 @@ class SettingsViewController: UIViewController {
     func setupLightAppearance() {
         self.defaultTipAmountSegmentedControl.tintColor = .blue
         self.view.backgroundColor = UIColor(named: Constants.Appearance.Light.viewBackgroundColor)
+        self.navigationController?.navigationBar.tintColor = nil
     }
 
     
     func setupDarkAppearance() {
         self.defaultTipAmountSegmentedControl.tintColor = .darkText
         self.view.backgroundColor = .darkGray
+        self.navigationController?.navigationBar.tintColor = .darkGray
     }
     
     @IBAction func didSelectDefaultTipAmount(_ sender: UISegmentedControl) {

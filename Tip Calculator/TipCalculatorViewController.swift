@@ -142,6 +142,9 @@ class TipCalculatorViewController: UIViewController {
         self.calculateTipButton.backgroundColor = UIColor.init(named: Constants.Appearance.Light.inputViewColor)
         self.clearButton.backgroundColor = UIColor.init(named: Constants.Appearance.Light.headerColor)
         self.tipAmountSegmentedControl.tintColor = UIColor.blue
+        self.amountTextField.keyboardAppearance = .default
+        self.navigationController?.navigationBar.tintColor = nil
+
     }
     
     func setupDarkAppearance() {
@@ -152,6 +155,8 @@ class TipCalculatorViewController: UIViewController {
         self.calculateTipButton.backgroundColor = UIColor.init(named: Constants.Appearance.Dark.inputViewColor)
         self.clearButton.backgroundColor = .lightGray
         self.tipAmountSegmentedControl.tintColor = UIColor.darkText
+        self.amountTextField.keyboardAppearance = .dark
+        self.navigationController?.navigationBar.tintColor = .darkGray
     }
     
 }
